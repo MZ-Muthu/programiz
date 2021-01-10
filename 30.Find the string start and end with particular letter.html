@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+      function check(a, b, c)
+      {
+          if(a.startsWith(`${b}`) && a.endsWith(`${c}`))
+          
+          {
+            document.write(`The Given String ${a} was start with ${b} and ${c}`);
+          }
+          else if(a.startsWith(`${b}`))
+          {
+            document.write(`The Given String ${a} was start with ${b} but not endsWith ${c}`);
+          }
+          else if(a.endsWith(`${c}`))
+          {
+            document.write(`The Given String ${a} was not start with ${b} but end with ${c}`);
+          }
+      }
+
+      let e = prompt("Enter the string");
+      let f = prompt("Ente4 the starting letter");
+      let g = prompt("Enter the ending letter");
+
+      let d = check(e, f, g);
+
+      
+    </script>
+  </body>
+</html>

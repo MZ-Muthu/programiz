@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+      let a = ["Spades", "Diamonds", "Club", "Heart"];
+      let b = [
+  "Ace",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "Jack",
+  "Queen",
+  "King",
+];
+
+let c = [];
+
+        for(i = 0;i <= a.length;i++)
+        {
+            for(j = 0;j <= b.length; j++)
+            {
+                let cards = {b: b[j], a : a[i]}
+                c.push(cards);
+            }
+        }
+
+        for(let i = c.length - 1;i > 0; i--)
+        {
+            let j = Math.floor(Math.random() * i);
+            let temp = c[i];
+            c[i] = c[j];
+            c[j] = temp;
+
+        }
+
+        document.write("The Cards are!!");
+
+        for(i = 0;i <= c.length; i++)
+        {
+            document.write(`${c[i].a} of ${c[i].b} here<br>`);
+        }
+    </script>
+  </body>
+</html>

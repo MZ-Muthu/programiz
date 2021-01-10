@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script> 
+            let a = prompt("Enter the First Number!!");
+            let b = prompt("Enter the Second Number!!");
+            let c = 1;
+            for(i=1;i <= a && i<= b; i++)
+          
+            {
+                if(a % i == 0 && b % i ==0)
+                {
+                    c = i;
+                }
+            }
+            document.write(`${a} and ${b} HCF number is ${c}`);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+        let a = prompt("Enter the finding Number!!!");
+        find = true;
+        if(a === 1)
+        {
+          alert(`${a} is a coprime number`);
+        }
+        else if(a === 2)
+        {
+          alert(`${a} is a prime number`);
+        }
+        else if(a > 1)
+        {
+          for(i = 2; i < a;i++)
+          if(a%i==0)
+          {
+            find = false;
+            break;
+          }
+        }
+        
+        if(find)
+        {
+          alert(`${a} is a prime number`);
+        }
+        else
+        {
+          alert(`${a} is a notprime number`);
+        }
+    </script>
+  </body>
+</html>

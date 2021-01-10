@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+        function check(a, b)
+        {
+            if(a.length != b.length)
+            {
+                
+                let c = false;
+            }
+            else
+            {
+               
+                for(let i = 0; i < a.length; i++)
+                {
+                    if(a[i] != b[i])
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        c = true;
+                    }
+                   
+                }
+                return c;
+            }
+
+        }
+        let a = [1,2,0,4];
+        let b = [1,2,3,4];
+        let d = check(a, b);
+
+        if(d)
+        {
+            document.write("Both have same array element");
+        }
+        else
+        {
+            document.write("Both array has the different elements");
+        }
+    </script>
+  </body>
+</html>

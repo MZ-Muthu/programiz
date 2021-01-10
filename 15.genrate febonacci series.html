@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <body><br>
+    <script>
+        let num = prompt("Enter the finding Armstrong number!!!1");
+        let a;
+        let b;
+        let c;
+        while(num > 0)
+        {
+           a = num % 10;
+           num=parseInt(num/10);
+           b = b + (a * a * a);
+           
+        }
+        if(num == b)
+        {
+        document.write(`${num} is a aremstrong number`);
+        }
+        else
+        {
+          document.write(`${num} is a not aremstrong number`);
+        }
+    </script>
+  </body>
+</html>

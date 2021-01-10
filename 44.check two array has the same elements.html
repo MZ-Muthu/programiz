@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+      function check(a, b)
+      {
+        if(JSON.stringify(b) == JSON.stringify(a))
+        {
+          document.write("both have same array elemts");
+        }
+        else
+        {
+          document.write("both array have different elements");
+        }
+      }
+      let a = [1, 2, 3];
+      let b = [1, 2, 3];
+      check(a, b);
+    </script>
+  </body>
+</html>

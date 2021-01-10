@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+        function check(a){
+      let obj = {
+              name : "muthu",
+              id : "17104047",
+              place : "Madukkur",
+          };
+
+          let find = obj.hasOwnProperty(`${a}`)
+          if(find)
+          {
+              document.write(`${a} key was already here in obj!!! `);
+          }
+          else
+          {
+              document.write(`${a} key was didn't available in obj `);
+          }
+        }
+
+        let b = prompt("Enter the finding obj's key !!!");
+        let c = check(b);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+       function check(a)
+       {
+           if(a % 4 == 0 && a % 100 != 0 || a % 400 == 0)
+           
+                   {
+                       document.write(`${a}  is leap year.`);
+                   }
+                   else 
+                   {
+                    document.write(`${a} not is not a leap year.`);
+                   }
+               
+           
+       }
+
+       let a = prompt("Enter the year you going to find.");
+       check(a);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+       function check(a, b)
+       {
+        let d = [];
+           for(i = 0; i <= a.length; i++)
+           {
+               for(j = 0; j <=b.length; j++)
+               {
+                if(a[i] == b[j])
+                {
+                  
+                    d.push(b[j]);
+
+                  
+                }
+                
+               }
+           }
+          return d;
+       }
+       let a = [1,2,3,4,5];
+       let b = [1,2,3,4,5];
+       let c = check(a, b);
+    console.log(c);
+    
+    </script>
+  </body>
+</html>

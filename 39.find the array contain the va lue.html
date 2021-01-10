@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+        function check(b)
+        {
+            let a = ['1','2','3','4','5'];
+            d = a.includes(`${b}`);
+            if(d)
+            {
+                document.write(`${b} is one of the value of the given array`);
+            }
+            else
+            {
+                document.write(`${b} is not one of the value of the given array`);
+            }
+        }
+        
+        let b = prompt("Enter the integer");
+        check(b);
+    </script>
+  </body>
+</html>
